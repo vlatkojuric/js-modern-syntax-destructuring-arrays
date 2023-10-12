@@ -5,26 +5,33 @@ console.clear();
 // Make sure to export your variable as in the example below to make the tests work.
 
 const item = ["Egg", 0.25, 12];
-
+export const [name, price, quantity] = item;
+console.log(item);
+console.log(name);
+console.log(price, quantity);
 // example: export const [value1, value2] = array;
 
 // EXERCISE 2
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, "Chris", "Owen"];
-
+export const [ageOfChris, firstNameOfChris, lastNameOfChris] = personChris;
+console.log(personChris);
+console.log(firstNameOfChris);
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
 // Make sure not to have unused variables.
 
 const personAlex = ["Alex", 12, "Main"];
-
+//the double coma says skip the second element
+export const [firstNameOfAlex, , lastNameOfAlex] = personAlex;
 // EXERCISE 4
 // Use array destructuring to extract the last name from the array
 // as variable called "lastName".
 
 const students = ["Christina", "Jon", "Alexandare"];
-
+export const [, , lastName] = students;
+console.log(lastName);
 // EXERCISE 5
 // Use array destructuring to extract all of the names from this nested array.
 // Assign the given order of students to variables called "student1" to "student5".
